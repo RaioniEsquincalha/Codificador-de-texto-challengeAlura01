@@ -1,0 +1,103 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+}
+
+header {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+body {
+    background: #F3F5FC
+    ;
+}
+
+.main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    width: 940px;
+    margin: auto;
+
+}
+
+.input-texto {
+    margin-top: 20px;
+    height: 600px;
+    resize: none;
+    background: none;
+    border: none;
+    
+}
+
+.input-texto:focus {
+    outline: none;
+}
+
+.mensagem {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-image: url("./images/personagem.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    resize: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.198);
+    border: none;
+
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 24px;
+    justify-content: center;
+
+}
+
+.encriptar {
+    background: darkblue;
+    color: #D8DFE8;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 65px;
+}
+
+.descriptografar{
+    background: #D8DFE8;
+    color: darkblue;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 65px;
+}
+
+.btnCopiar {
+    background: #D8DFE8;
+    color: darkblue;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 65px;
+}
+.informacoes {
+    font-size: 15px;
+}
