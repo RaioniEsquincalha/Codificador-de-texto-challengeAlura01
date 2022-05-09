@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="preconnect" href="https://fontsgoogleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f5ad57f1cc.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Codificador de Texto</title>
     
 </head>
 <body>
 
     <header>
-        <img src="./images/logo_alura.svg" alt="logo alura">
+        <a href="./index.html"><img src="./images/logo_alura.svg" alt="logo alura"></a>
     </header>
 
     
@@ -23,7 +26,7 @@
         <section>
             <textarea class="input-texto" cols="40" rows="6" placeholder="Escreva seu texto aqui" autofocus></textarea>
             <div>
-                <h6 class="informacoes">Apenas letras minúsculas e sem acento.</h6>
+                <h6 class="informacoes"><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="botoes">
                 <button class="encriptar" onclick="btnEncriptar()">
@@ -37,21 +40,36 @@
             </div>
         </section>
         
-        <section>
+        <section class="sessaoMsg">
             <textarea class="mensagem" cols="18" rows="8" readonly id="copiar"></textarea>
 
-            <div class="alert">Texto Copiado!</div>
+            <img src="./images/personagem.svg" alt="personagem" class="personagem">
 
-            <div class="botoes">
+            <div class="botaoCopy">
                 <button class="btnCopiar" onClick="copiarTexto()">
                     Copiar
                 </button>
             </div>
+            <div class="texto-informativo">
+                <p class="informacao01">
+                    Nenhuma mensagem encontrada.
+                </p>
+                <p class="informacao02">
+                    Digite um texto que você queira Criptografar ou Descriptografar.
+                </p>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="rodape">
+            <p class="textoRodape">
+                Projeto desenvolvido por <a href="https://github.com/RaioniEsquincalha" target="_blank" rel="external" title="GitHub Raioni"><strong>Raioni Esquincalha</strong></a> como desafio proposto para o programa <strong><a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank" rel="external" title="Site do Programa">Oracle One</a> junto com <a href="https://www.alura.com.br/" target="_blank" rel="external" title="Site Alura">Alura.</a></strong>
+            </p>
+        </div>
+    </footer>
     
     <script src="./script.js"></script>
-    
     
 </body>
 </html>
